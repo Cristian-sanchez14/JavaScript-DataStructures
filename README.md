@@ -3,7 +3,8 @@
 ## Table of contents
 1. What is a data structure?
 2. Arrays
-3. Objects (hash tables)
+3. Objects 
+ - facbook app
 4. Stacks
 5. Queues
 6. Linked lists
