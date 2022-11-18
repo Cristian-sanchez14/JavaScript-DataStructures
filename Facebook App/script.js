@@ -9,6 +9,14 @@ let database = [
   {
     username: 'cristian',
     password: 'cool123'
+  },
+  {
+    username: 'sally',
+    password: 'cool777'
+  },
+  {
+    username: 'gary',
+    password: 'cool000'
   }
 ]
 
@@ -28,17 +36,30 @@ let newsfeed = [
   }
 ]
 
-// let user know what to type in!!
-let userNamePrompt = prompt("What's your username")
-let passwordPrompt = prompt("What's your password")
-
 // function signing in from the data of the "database"
-function signIn(user, pass) {
-  if (user === database[0].username && pass === database[0].password) {
+function isUserValid(username, password) {
+  for (let i = 0; i < database.length; i++) {
+    if (
+      database[i].username === username &&
+      database[i].password === password
+    ) {
+      console.log(newsfeed)
+      return true
+    }
+  }
+  return false
+}
+
+// is user logged in show news feed. else alerts "sorry wrong username and password"
+function signIn(username, password) {
+  if (isUserValid(username, password)) {
     console.log(newsfeed)
   } else {
     alert('Sorry, wrong username and password')
   }
 }
+// let user know what to type in!!
+let userNamePrompt = prompt("What's your username")
+let passwordPrompt = prompt("What's your password")
 
 signIn(userNamePrompt, passwordPrompt)
