@@ -5,19 +5,3 @@
 2. Arrays
 3. Objects 
  - facbook app
-4. Stacks
-5. Queues
-6. Linked lists
- - Singly linked lists
- - Doubly linked lists
-
-7. Trees
- - Binary trees
- - Heaps
-
-8. Graphs
- - Undirected and directed graphs
- - Weighted and unweighted graphs
- - How to represent graphs
-
-9. Roundup
